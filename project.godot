@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Mem Timer"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+boot_splash/bg_color=Color(0.180392, 0.203922, 0.247059, 1)
+boot_splash/image="res://resourses/splash.png"
+config/icon="res://resourses/icon.svg"
+
+[display]
+
+window/size/viewport_width=830
+window/size/viewport_height=355
+window/size/resizable=false
+window/vsync/vsync_mode=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-sqlite/plugin.cfg")

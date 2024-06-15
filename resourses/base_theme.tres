@@ -1,0 +1,61 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cdknylpk2opef"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akv7x"]
+bg_color = Color(0.847059, 0.870588, 0.909804, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yhrqh"]
+bg_color = Color(0.847059, 0.870588, 0.909804, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfe7f"]
+bg_color = Color(0.447059, 0.470588, 0.513726, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vpaoj"]
+bg_color = Color(0.847059, 0.870588, 0.909804, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i8284"]
+bg_color = Color(0.180392, 0.203922, 0.247059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0ib3"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 20.0
+bg_color = Color(0.231373, 0.258824, 0.317647, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.447059, 0.470588, 0.513726, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[resource]
+Button/colors/font_focus_color = Color(0.180392, 0.203922, 0.247059, 1)
+Button/colors/font_hover_color = Color(0.180392, 0.203922, 0.247059, 1)
+Button/colors/font_hover_pressed_color = Color(0.180392, 0.203922, 0.247059, 1)
+Button/colors/font_pressed_color = Color(0.180392, 0.203922, 0.247059, 1)
+Button/font_sizes/font_size = 35
+Button/styles/focus = SubResource("StyleBoxFlat_akv7x")
+Button/styles/hover = SubResource("StyleBoxFlat_yhrqh")
+Button/styles/normal = SubResource("StyleBoxFlat_pfe7f")
+Button/styles/pressed = SubResource("StyleBoxFlat_vpaoj")
+Panel/styles/panel = SubResource("StyleBoxFlat_i8284")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_c0ib3")

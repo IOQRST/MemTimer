@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=3 uid="uid://iq60i0p2kjco"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_6f0mh"]
+[ext_resource type="Theme" uid="uid://cdknylpk2opef" path="res://resourses/base_theme.tres" id="2_472g5"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6f0mh")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 832.0
+offset_bottom = 360.0
+theme = ExtResource("2_472g5")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 192.0
+offset_right = 185.0
+offset_bottom = 250.0
+theme = ExtResource("2_472g5")
+text = "Start"
+
+[node name="Label" type="Label" parent="Start"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.149
+anchor_top = -3.31
+anchor_right = -0.149
+anchor_bottom = -3.31
+offset_left = 23.989
+offset_top = 15.98
+offset_right = 519.989
+offset_bottom = 182.98
+theme_override_font_sizes/font_size = 80
+text = "0:0:0:0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="Start/Label"]
+wait_time = 0.1
+
+[node name="Stop" type="Button" parent="."]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 192.0
+offset_right = 521.0
+offset_bottom = 250.0
+theme = ExtResource("2_472g5")
+text = "Stop"
+
+[node name="Pause" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 353.0
+offset_bottom = 250.0
+theme = ExtResource("2_472g5")
+text = "Pause"
+
+[node name="Save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 256.0
+offset_right = 185.0
+offset_bottom = 314.0
+theme = ExtResource("2_472g5")
+text = "Save"
+
+[node name="Clear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 256.0
+offset_right = 353.0
+offset_bottom = 314.0
+theme = ExtResource("2_472g5")
+text = "Clear DB"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 256.0
+offset_right = 521.0
+offset_bottom = 314.0
+theme = ExtResource("2_472g5")
+text = "Quit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 40.0
+offset_right = 800.0
+offset_bottom = 312.0
+theme = ExtResource("2_472g5")
+theme_override_colors/table_border = Color(1, 1, 1, 1)
+shortcut_keys_enabled = false
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="timeout" from="Start/Label/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Stop" to="." method="_on_stop_pressed"]
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="Clear" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
